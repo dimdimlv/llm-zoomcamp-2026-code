@@ -1,7 +1,8 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../lessons"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "../lessons"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from rag_helper import RAGBase
 
